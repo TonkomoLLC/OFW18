@@ -1,0 +1,3 @@
+sed 's/,/\t/g' DUO-DRM-0.5ms-2D-3D-T-CH4-H2-CO-arcLength.csv > DUOresults.txt
+sed 's/,/\t/g' DUO-DRM-0.5ms-2D-3D-T-CH4-H2-CO-arcLength.csv > DUO2Dresults-kEff.txt
+

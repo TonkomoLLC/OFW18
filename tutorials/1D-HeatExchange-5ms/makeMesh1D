@@ -1,0 +1,8 @@
+rm log.*
+rm -r constant/polyMesh
+blockMesh > log.blockMesh
+topoSet > log.topoSet
+checkMesh > log.checkMesh
+rm -r constant/FLUID/polyMesh
+mv constant/polyMesh constant/FLUID/polyMesh
+

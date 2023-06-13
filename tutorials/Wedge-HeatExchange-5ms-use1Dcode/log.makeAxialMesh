@@ -1,0 +1,51 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  10
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 10-c4cf895ad8fa
+Exec   : makeAxialMesh -overwrite
+Date   : Jun 28 2023
+Time   : 14:06:42
+Host   : "aris"
+PID    : 3506792
+I/O    : uncollated
+Case   : /home/eadaymo/OpenFOAM/eadaymo-10/run/OFW18code/CHTMRF-newTutorials-v2/Wedge-HeatExchange-5ms
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Plane of the grid: (0 0 1) (0.25 0.0084833712 -2.404201e-20)
+
+The rotation-axis: ((0 0 0) (1 0 0))
+
+Creating wedge with an opening angle of 5 degrees
+
+Projecting nodes
+Radius to axis: min = 0 max = 0.01265
+ Calculated Distance of exteriorWall to axis is 0.012662029
+Distance of axis to patch is 0.012662029 -> not changing the patch type
+Splitting patch frontAndBack
+
+ Copying patches 
+ Creating Patches
+ Creating Pos-patch 
+ Creating Neg-patch 
+ Changing patches
+
+Changing patch types 
+ Changing frontAndBack_pos to wedge
+ Changing frontAndBack_neg to wedge
+
+Writing mesh to time 0
+End
+
+Now use collapseEdges to clean grid

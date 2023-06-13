@@ -1,0 +1,77 @@
+Region: FLUID Courant Number mean: 4623.1981 max: 6055.5607
+Time = 4997s
+
+
+Solving for fluid region FLUID
+DILUPBiCGStab:  Solving for Ux, Initial residual = 3.4951887e-09, Final residual = 3.4951887e-09, No Iterations 0
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.059837348, Final residual = 6.5325464e-18, No Iterations 1
+DILUPBiCGStab:  Solving for CH4, Initial residual = 0.40465171, Final residual = 1.0759694e-16, No Iterations 1
+DILUPBiCGStab:  Solving for O2, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for H2, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for H2O, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for CO, Initial residual = 0, Final residual = 0, No Iterations 0
+Overall U (heat transfer coefficient) used in EEqn
+DILUPBiCGStab:  Solving for h, Initial residual = 8.8487076e-08, Final residual = 8.8487076e-08, No Iterations 0
+Min/max T:300 889.47382
+GAMG:  Solving for p_rgh, Initial residual = 2.358336e-08, Final residual = 2.358336e-08, No Iterations 0
+time step continuity errors : sum local = 3.2452223e-06, global = -3.5439989e-09, cumulative = -3.5439989e-09
+ExecutionTime = 14.566719 s  ClockTime = 14 s
+
+Region: FLUID Courant Number mean: 4623.1981 max: 6055.5607
+Time = 4998s
+
+
+Solving for fluid region FLUID
+DILUPBiCGStab:  Solving for Ux, Initial residual = 3.3739063e-09, Final residual = 3.3739063e-09, No Iterations 0
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.052146882, Final residual = 1.0554894e-17, No Iterations 1
+DILUPBiCGStab:  Solving for CH4, Initial residual = 0.73389749, Final residual = 1.5019565e-16, No Iterations 1
+DILUPBiCGStab:  Solving for O2, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for H2, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for H2O, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for CO, Initial residual = 0, Final residual = 0, No Iterations 0
+Overall U (heat transfer coefficient) used in EEqn
+DILUPBiCGStab:  Solving for h, Initial residual = 8.851974e-08, Final residual = 8.851974e-08, No Iterations 0
+Min/max T:300 889.47382
+GAMG:  Solving for p_rgh, Initial residual = 4.9015009e-08, Final residual = 4.9015009e-08, No Iterations 0
+time step continuity errors : sum local = 6.7447933e-06, global = -4.1291731e-09, cumulative = -4.1291731e-09
+ExecutionTime = 14.569324 s  ClockTime = 14 s
+
+Region: FLUID Courant Number mean: 4623.1981 max: 6055.5607
+Time = 4999s
+
+
+Solving for fluid region FLUID
+DILUPBiCGStab:  Solving for Ux, Initial residual = 3.2222711e-09, Final residual = 3.2222711e-09, No Iterations 0
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.064560497, Final residual = 7.1385372e-18, No Iterations 1
+DILUPBiCGStab:  Solving for CH4, Initial residual = 0.42206158, Final residual = 1.2042524e-16, No Iterations 1
+DILUPBiCGStab:  Solving for O2, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for H2, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for H2O, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for CO, Initial residual = 0, Final residual = 0, No Iterations 0
+Overall U (heat transfer coefficient) used in EEqn
+DILUPBiCGStab:  Solving for h, Initial residual = 8.8774669e-08, Final residual = 8.8774669e-08, No Iterations 0
+Min/max T:300 889.47382
+GAMG:  Solving for p_rgh, Initial residual = 7.6694813e-08, Final residual = 7.6694813e-08, No Iterations 0
+time step continuity errors : sum local = 1.0553704e-05, global = -4.6092665e-09, cumulative = -4.6092665e-09
+ExecutionTime = 14.572003 s  ClockTime = 14 s
+
+Region: FLUID Courant Number mean: 4623.1981 max: 6055.5607
+Time = 5000s
+
+
+Solving for fluid region FLUID
+DILUPBiCGStab:  Solving for Ux, Initial residual = 3.0348775e-09, Final residual = 3.0348775e-09, No Iterations 0
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.06317221, Final residual = 5.6821884e-18, No Iterations 1
+DILUPBiCGStab:  Solving for CH4, Initial residual = 0.23650643, Final residual = 9.515053e-17, No Iterations 1
+DILUPBiCGStab:  Solving for O2, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for H2, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for H2O, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for CO, Initial residual = 0, Final residual = 0, No Iterations 0
+Overall U (heat transfer coefficient) used in EEqn
+DILUPBiCGStab:  Solving for h, Initial residual = 8.9064918e-08, Final residual = 8.9064918e-08, No Iterations 0
+Min/max T:300 889.47382
+GAMG:  Solving for p_rgh, Initial residual = 1.0274575e-07, Final residual = 2.5831523e-08, No Iterations 1
+time step continuity errors : sum local = 3.5546009e-06, global = -4.6335743e-09, cumulative = -4.6335743e-09
+ExecutionTime = 14.578634 s  ClockTime = 14 s
+
+End

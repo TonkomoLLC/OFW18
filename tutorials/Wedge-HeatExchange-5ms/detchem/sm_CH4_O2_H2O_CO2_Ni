@@ -1,0 +1,91 @@
+SURFACE MECHANISM OF CH4 REFORMING AND OXIDATION OVER NI
+***********************************************************************
+****                                                                  *
+****     CH4 ON Ni - tested on MDR, MSR, CPOX                         *
+****                                                                  *
+****     Version 3.0    2014                                          *
+****                                                                  *
+****     K. Herrera Delgado, L. Maier, O. Deutschmann                 *
+****     KIT Karlsruhe                                                *
+****                temp. range 500 - 2000K                           *
+****                                                                  *
+****                                                                  *
+****     Kinetic data format: DETCHEM                                 *
+****      k = A * T**b * exp (-Ea/RT)         A          b       Ea   *
+****                                       (cm,mol,s)    -     kJ/mol *
+****                                                                  *
+****      STICK: A in next reaction is initial sticking coefficient   *
+****                                                                  *
+****      $..  : additional coverage dependence of Ea (3rd column)    *
+****               or changed reaction order (2nd column)             *
+****                                                                  *
+****      see manuals on www.detchem.com for details                  *
+****     Surface site density: 2.66E-9 mol/cm**2                      *
+****                                                                  *
+***********************************************************************      
+STICK
+(Ni)    +(Ni)    +H2      >H(Ni)   +H(Ni)   * 3.000E-02 -0.000     5.000
+H(Ni)   +H(Ni)   >(Ni)    +(Ni)    +H2      * 2.544E+20  0.000    95.209
+STICK
+O2      +(Ni)    +(Ni)    >O(Ni)   +O(Ni)   * 4.358E-02 -0.206     1.511
+O(Ni)   +O(Ni)   >O2      +(Ni)    +(Ni)    * 1.188E+21  0.823   468.907
+STICK
+(Ni)    +CH4     >CH4(Ni)                   * 8.000E-03  0.000    -0.000
+CH4(Ni) >(Ni)    +CH4                       * 8.705E+15 -0.000    37.550
+STICK
+(Ni)    +H2O     >H2O(Ni)                   * 9.999E-02  0.000    -0.000
+H2O(Ni) >(Ni)    +H2O                       * 3.734E+12 -0.000    60.791
+STICK
+(Ni)    +CO2     >CO2(Ni)                   * 7.001E-06 -0.000     0.000
+CO2(Ni) >(Ni)    +CO2                       * 6.442E+07  0.000    25.979
+STICK
+(Ni)    +CO      >CO(Ni)                    * 4.999E-01  0.000    -0.000
+CO(Ni)  >(Ni)    +CO                        * 3.566E+11 -0.000   111.271
+$CO(Ni)                                                  0.000    50.000
+H(Ni)   +O(Ni)   >(Ni)    +OH(Ni)           * 3.951E+23 -0.188   104.346
+(Ni)    +OH(Ni)  >H(Ni)   +O(Ni)            * 2.254E+20  0.188    29.644
+H(Ni)   +OH(Ni)  >(Ni)    +H2O(Ni)          * 1.854E+20  0.086    41.517
+(Ni)    +H2O(Ni) >H(Ni)   +OH(Ni)           * 3.674E+21 -0.086    92.943
+OH(Ni)  +OH(Ni)  >H2O(Ni) +O(Ni)            * 2.346E+20  0.274    92.366
+H2O(Ni) +O(Ni)   >OH(Ni)  +OH(Ni)           * 8.148E+24 -0.274   218.494
+C(Ni)   +O(Ni)   >(Ni)    +CO(Ni)           * 3.402E+23 -0.000   148.001
+(Ni)    +CO(Ni)  >C(Ni)   +O(Ni)            * 1.758E+13  0.000   116.239
+$CO(Ni)                                                  0.000    50.000
+CO(Ni)  +O(Ni)   >(Ni)    +CO2(Ni)          * 2.002E+19 -0.000   123.601
+$CO(Ni)                                                  0.000    50.000
+(Ni)    +CO2(Ni) >CO(Ni)  +O(Ni)            * 4.648E+23 -1.000    89.319
+(Ni)    +HCO(Ni) >H(Ni)   +CO(Ni)           * 3.710E+21 -0.000     0.003
+$CO(Ni)                                                  0.000   -50.000
+H(Ni)   +CO(Ni)  >(Ni)    +HCO(Ni)          * 4.009E+20 -1.000   132.227
+(Ni)    +HCO(Ni) >CH(Ni)  +O(Ni)            * 3.796E+14 -0.000    81.911
+CH(Ni)  +O(Ni)   >(Ni)    +HCO(Ni)          * 4.599E+20  0.000   109.969
+(Ni)    +CH4(Ni) >H(Ni)   +CH3(Ni)            1.548E+21  0.087    55.825
+H(Ni)   +CH3(Ni) >(Ni)    +CH4(Ni)            1.443E+22 -0.087    63.455
+CH3(Ni) +(Ni)    >H(Ni)   +CH2(Ni)            1.548E+24  0.087    98.125
+H(Ni)   +CH2(Ni) >CH3(Ni) +(Ni)               3.091E+23 -0.087    57.205
+(Ni)    +CH2(Ni) >CH(Ni)  +H(Ni)              1.548E+24  0.087    95.225
+CH(Ni)  +H(Ni)   >(Ni)    +CH2(Ni)            9.774E+24 -0.087    81.055
+CH(Ni)  +(Ni)    >H(Ni)   +C(Ni)            * 9.888E+20  0.500    21.991
+H(Ni)   +C(Ni)   >CH(Ni)  +(Ni)             * 1.707E+24 -0.500   157.919
+CH4(Ni) +O(Ni)   >CH3(Ni) +OH(Ni)             5.621E+24 -0.101    87.872
+CH3(Ni) +OH(Ni)  >CH4(Ni) +O(Ni)              2.987E+22  0.101    25.798
+CH3(Ni) +O(Ni)   >CH2(Ni) +OH(Ni)             1.223E+25 -0.101   130.672
+CH2(Ni) +OH(Ni)  >CH3(Ni) +O(Ni)              1.393E+21  0.101    19.048
+CH2(Ni) +O(Ni)   >CH(Ni)  +OH(Ni)             1.223E+25 -0.101   131.372
+CH(Ni)  +OH(Ni)  >CH2(Ni) +O(Ni)              4.407E+22  0.101    42.498
+CH(Ni)  +O(Ni)   >C(Ni)   +OH(Ni)           * 2.471E+21  0.312    57.742
+C(Ni)   +OH(Ni)  >CH(Ni)  +O(Ni)            * 2.433E+21 -0.312   118.968
+CO(Ni)  +CO(Ni)  >CO2(Ni) +C(Ni)            * 1.624E+14  0.500   241.761
+$CO(Ni)                                                  0.000   100.000
+CO2(Ni) +C(Ni)   >CO(Ni)  +CO(Ni)           * 7.294E+28 -0.500   239.239
+(Ni)    +COOH(Ni)>H(Ni)   +CO2(Ni)            3.737E+20  0.475    33.656
+H(Ni)   +CO2(Ni) >(Ni)    +COOH(Ni)           6.250E+24 -0.475   117.344
+(Ni)    +COOH(Ni)>CO(Ni)  +OH(Ni)             1.461E+24 -0.213    54.366
+CO(Ni)  +OH(Ni)  >(Ni)    +COOH(Ni)           6.003E+20  0.213    97.634
+$CO(Ni)                                                  0.000    50.000
+C(Ni)   +OH(Ni)  >H(Ni)   +CO(Ni)           * 3.888E+25  0.188    62.555
+H(Ni)   +CO(Ni)  >C(Ni)   +OH(Ni)           * 3.522E+18 -0.188   105.495
+$CO(Ni)                                                  0.000    50.000
+H(Ni)   +COOH(Ni)>HCO(Ni) +OH(Ni)             6.000E+22 -1.163   104.878
+HCO(Ni) +OH(Ni)  >H(Ni)   +COOH(Ni)           2.282E+20  0.263    15.922
+END

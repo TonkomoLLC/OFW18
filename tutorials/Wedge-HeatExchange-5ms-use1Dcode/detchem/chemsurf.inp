@@ -1,0 +1,61 @@
+{path ./detchem}
+
+ <SPECIES>
+  <PARAMETERS>
+  </PARAMETERS>
+  <GASPHASE>
+    CH4      O2       H2       H2O      CO       CO2
+  </GASPHASE>
+   <SURFACE mol/cm2=  2.66E-09>
+     _Ni    
+     H2O_Ni   
+     H_Ni   
+     COOH_Ni   
+     OH_Ni   
+     CO_Ni    
+     C_Ni   
+     CH3_Ni   
+     CH2_Ni   
+     CH_Ni   
+     CH4_Ni   
+     O_Ni   
+     CO2_Ni   
+     CHO_Ni   
+     HCO_Ni   
+     <INITIAL>
+         _Ni       *    
+       O_Ni        0.00
+       H2O_Ni      0.00
+       H_Ni        0.00
+     </INITIAL>
+   </SURFACE>
+</SPECIES>
+
+<MECHANISM>
+  <PARAMETERS>
+  </PARAMETERS>
+  <SURFACE name="_Ni">
+    file="detchem/sm_CH4_O2_H2O_CO2_Ni-neu"
+    
+    <UDF>
+      c_cm_H_Ni = c_H_Ni / 1e4       #Convert surface concentration from mol/m^2 to  mol/cm^2
+      eta2 = 5.0                       #Factor for theta_CO_Ni 
+      k2 = 2.544e20 * 10^(eta2 * theta_CO_Ni) * exp(-95209.0/R/T) #s. Gregor, activation eregy has to be in J/mol
+      rate_in_cm = k2 * c_cm_H_Ni^2  #Calculate rate in mol/(s*cm^2)  
+      rate_in_SI = rate_in_cm * 1.0e4  #Convert rate from mol/(s*cm^2) to mol/(s*m^2)
+   </UDF>
+   
+    <UDF-Reaction>
+      2 H_Ni > 2 _Ni + H2
+      variable = rate_in_SI
+   </UDF-Reaction>
+
+  </SURFACE>
+</MECHANISM>
+
+<SURFACE-MODEL>
+<CHEMSURF>
+</CHEMSURF>
+</SURFACE-MODEL>
+
+<DETCHEM></DETCHEM>

@@ -1,0 +1,8 @@
+ELEMENTS 
+C   O   H   
+END
+SPECIE 
+CH4      O2       H2       H2O      CO       CO2
+END
+
+
