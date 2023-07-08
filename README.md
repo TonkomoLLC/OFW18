@@ -22,9 +22,9 @@ This thermo model optionally calculates the porous effective thermal conductivit
 
 ### Differences between chtMultiRegionFoam-porous1D and heRhoThermoPorous
 
-If you are using the original unmodified `chtMultiRegonFoam` from OpenFOAM v14, then in physicalProperties select the `heRhoThermoPorous` thermo model type instead of `heRhoThermo`. As discussed above, note that when calculating porous heat transfer parameters, a fixed value of U, read from the file `porousProperties` is used. 
+If you are using the original unmodified `chtMultiRegonFoam` from OpenFOAM v10, then in `physicalProperties` select the `heRhoThermoPorous` thermo model type instead of `heRhoThermo`. As discussed above, note that when calculating porous heat transfer parameters, a fixed value of U, read from the file `porousProperties` is used. 
 
-Or, alternatively, the solver `chtMultiRegionFoam-porous1D` may be used with the standard `heRhoThermo` model type specified in physicalProperties.  The energy equation is modified to use the effective thermal diffusivity calculated in the file `preCalc.H` in the energy equation.
+Or, alternatively, the solver `chtMultiRegionFoam-porous1D` may be used with the standard `heRhoThermo` model type specified in `physicalProperties`.  The energy equation is modified to use the effective thermal diffusivity calculated in the file `preCalc.H` in the energy equation.
 
 ## Compilation
 
