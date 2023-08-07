@@ -2,7 +2,7 @@
   <ServerManagerState version="5.10.1">
     <Proxy group="animation" type="AnimationScene" id="261" servers="16">
       <Property name="AnimationTime" id="261.AnimationTime" number_of_elements="1">
-        <Element index="0" value="800"/>
+        <Element index="0" value="5000"/>
       </Property>
       <Property name="Cues" id="261.Cues" number_of_elements="1">
         <Proxy value="263"/>
@@ -12,7 +12,7 @@
         <Element index="0" value="10"/>
       </Property>
       <Property name="EndTime" id="261.EndTime" number_of_elements="1">
-        <Element index="0" value="800"/>
+        <Element index="0" value="5000"/>
       </Property>
       <Property name="FramesPerTimestep" id="261.FramesPerTimestep" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -5821,7 +5821,7 @@
         </Domain>
       </Property>
       <Property name="FileName" id="11865.FileName" number_of_elements="1">
-        <Element index="0" value="/home/eadaymo/OpenFOAM/eadaymo-10/run/OFW18code/CHTMRF-newTutorials-v2/Wedge-HeatExchange-5ms-use1Dcode/Wedge-HeatExchange-5ms{FLUID}.OpenFOAM"/>
+        <Element index="0" value="/home/eadaymo/OpenFOAM/eadaymo-10/applications/OFW18-fixBiot/tutorials/Wedge-HeatExchange-5ms-use1Dcode/Wedge-HeatExchange-5ms{FLUID}.OpenFOAM"/>
         <Domain name="files" id="11865.FileName.files"/>
       </Property>
       <Property name="LagrangianFieldArrayStatus" id="11865.LagrangianFieldArrayStatus"/>
@@ -5879,10 +5879,9 @@
           <String text="porosity - cellZone"/>
         </Domain>
       </Property>
-      <Property name="TimestepValues" id="11865.TimestepValues" number_of_elements="3">
+      <Property name="TimestepValues" id="11865.TimestepValues" number_of_elements="2">
         <Element index="0" value="0"/>
-        <Element index="1" value="700"/>
-        <Element index="2" value="800"/>
+        <Element index="1" value="5000"/>
       </Property>
       <Property name="UiCacheMesh" id="11865.UiCacheMesh" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -5925,7 +5924,7 @@
     <Proxy group="misc" type="TimeKeeper" id="256" servers="16">
       <Property name="SuppressedTimeSources" id="256.SuppressedTimeSources"/>
       <Property name="Time" id="256.Time" number_of_elements="1">
-        <Element index="0" value="800"/>
+        <Element index="0" value="5000"/>
         <Domain name="range" id="256.Time.range"/>
       </Property>
       <Property name="TimeLabel" id="256.TimeLabel" number_of_elements="1">
@@ -5933,16 +5932,15 @@
       </Property>
       <Property name="TimeRange" id="256.TimeRange" number_of_elements="2">
         <Element index="0" value="0"/>
-        <Element index="1" value="800"/>
+        <Element index="1" value="5000"/>
       </Property>
       <Property name="TimeSources" id="256.TimeSources" number_of_elements="2">
         <Proxy value="11865"/>
         <Proxy value="11876"/>
       </Property>
-      <Property name="TimestepValues" id="256.TimestepValues" number_of_elements="3">
+      <Property name="TimestepValues" id="256.TimestepValues" number_of_elements="2">
         <Element index="0" value="0"/>
-        <Element index="1" value="700"/>
-        <Element index="2" value="800"/>
+        <Element index="1" value="5000"/>
       </Property>
       <Property name="Views" id="256.Views" number_of_elements="2">
         <Proxy value="11910"/>
@@ -6521,11 +6519,11 @@
         <Domain name="bool" id="11910.UseCache.bool"/>
       </Property>
       <Property name="ViewSize" id="11910.ViewSize" number_of_elements="2">
-        <Element index="0" value="737"/>
-        <Element index="1" value="547"/>
+        <Element index="0" value="1413"/>
+        <Element index="1" value="790"/>
       </Property>
       <Property name="ViewTime" id="11910.ViewTime" number_of_elements="1">
-        <Element index="0" value="800"/>
+        <Element index="0" value="5000"/>
         <Domain name="range" id="11910.ViewTime.range"/>
       </Property>
     </Proxy>
@@ -7034,7 +7032,7 @@
         <Element index="1" value="480"/>
       </Property>
       <Property name="ViewTime" id="12356.ViewTime" number_of_elements="1">
-        <Element index="0" value="800"/>
+        <Element index="0" value="5000"/>
         <Domain name="range" id="12356.ViewTime.range"/>
       </Property>
       <Property name="VolumeAnisotropy" id="12356.VolumeAnisotropy" number_of_elements="1">

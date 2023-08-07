@@ -83,28 +83,12 @@
         volScalarField Nuw = (1.3 + 5./Nfactor)*(kappaEffSolid/thermo.kappa()) + 0.19*pow(PrNum,0.33333)*pow(Rep,0.75);
         volScalarField hw = Nuw * thermo.kappa() / (diamParticle*UnitLength);
 
-        // Bi_s = solid Biot number 
-        // A.G. Dixon. Wall and particle-shape effects on heat transfer in packed beds. 
-        // Chemical Engineering Communications, 71:1 (1988), 217-237.
-        scalar Bi_s_power = (diamTube/diamParticle)-1.0;
-        scalar Bi_s = 2.41+(0.156*(std::pow(Bi_s_power,2.0))); 
-        
-        // Bi_f = fluid Biot number
-        // A.G. Dixon. Wall and particle-shape effects on heat transfer in packed beds. 
-        // Chemical Engineering Communications, 71:1 (1988), 217-237.
-        scalar Pe_rf_infinity = 12.0; // sphere
-        volScalarField Nu_wf = 0.523*(1.0-diamParticle/diamTube)*pow(PrNum,1./3.)*pow(Rep,0.738);
-        scalar tortuosity = 1.5-(0.5*porosity);
-        volScalarField Pe_rf = (1.0/(((porosity*tortuosity)/(PrNum*Rep))+(1./Pe_rf_infinity)));
-        volScalarField Bi_f = Nu_wf*diamTube/(2.0*diamParticle)*(Pe_rf/(Rep*PrNum));
 
-        // Overall tube Biot number
-        // D.L. Cresswell and A. G. Dixon, Theoretical prediction of effective heat transfer parameters in packed beds. 
-        // AIChE J. 25 (1979), 663.
-
-        // Overall heat transfer coefficient
+        // Bi = hw * (d_t/2) / Keff
         // A.G. Dixon. An improved equation for the overall heat transfer coefficient in packed beds. 
         // Chemical Engineering and Processing 35 (1996), 323-331.
+        
+        Bi = hw * (diamTube*UnitLength/2) / kappaEff;
 
         forAll(rho, celli)
         {
@@ -112,36 +96,12 @@
             {
                 if (cellsZone[cI] == celli)
                 {    
-                    if (Rep[celli] < 10.)
-                    {
-                        //alphaEff[celli] = kappaEff[celli]/CpEff[celli];
-                        Bi[celli] = Bi_s;
-                        OneOverU[celli] = 1./hw[celli] + (diamTube)/(6.*kappaEff[celli]) *((Bi[celli]+3.)/(Bi[celli]+4.));   
-                        if (useOverallUconst)
-                            overallU[celli] = overallUconst;
-                        else
-                            overallU[celli] = 1. / OneOverU[celli];
-                    }
-                    else if (Rep[celli] > 1000.)
-                    {
-                        //alphaEff[celli] = kappaEff[celli]/CpEff[celli];
-                        Bi[celli] = Bi_f[celli];
-                        OneOverU[celli] = 1./hw[celli] + (diamTube)/(6.*kappaEff[celli]) *((Bi[celli]+3.)/(Bi[celli]+4.));            
-                        if (useOverallUconst)
-                            overallU[celli] = overallUconst;
-                        else
-                            overallU[celli] = 1 / OneOverU[celli];
-                    }
+                    
+                    OneOverU[celli] = 1./hw[celli] + (diamTube)/(6.*kappaEff[celli]) *((Bi[celli]+3.)/(Bi[celli]+4.));  
+                    if (useOverallUconst)
+                        overallU[celli] = overallUconst;
                     else
-                    {
-                        //alphaEff[celli] = kappaEff[celli]/CpEff[celli];
-                        Bi[celli] = 1. / (1./Bi_f[celli] + 1/Bi_s);
-                        OneOverU[celli] = 1./hw[celli] + (diamTube)/(6.*kappaEff[celli]) *((Bi[celli]+3.)/(Bi[celli]+4.));  
-                        if (useOverallUconst)
-                            overallU[celli] = overallUconst;
-                        else
-                            overallU[celli] = 1. / OneOverU[celli];
-                    }
+                        overallU[celli] = 1. / OneOverU[celli];
 
                     alphaEff[celli] = kappaEff[celli] / CpEff[celli];
                 }

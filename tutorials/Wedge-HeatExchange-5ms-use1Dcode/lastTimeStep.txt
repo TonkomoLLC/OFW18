@@ -1,56 +1,80 @@
-Region: FLUID Courant Number mean: 4959.4554 max: 7869.4532
-Time = 881s
+
+Region: FLUID Courant Number mean: 4959.4554 max: 7869.4527
+Time = 4997s
 
 
 Solving for fluid region FLUID
-DILUPBiCGStab:  Solving for Ux, Initial residual = 5.2986173e-10, Final residual = 5.2986173e-10, No Iterations 0
-DILUPBiCGStab:  Solving for Uy, Initial residual = 3.4718974e-08, Final residual = 3.4718974e-08, No Iterations 0
-DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0011142029, Final residual = 2.5570854e-06, No Iterations 1
-DILUPBiCGStab:  Solving for CH4, Initial residual = 0.50822714, Final residual = 0.017373068, No Iterations 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 2.3756591e-10, Final residual = 2.3756591e-10, No Iterations 0
+DILUPBiCGStab:  Solving for Uy, Initial residual = 3.1886666e-08, Final residual = 3.1886666e-08, No Iterations 0
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0010540595, Final residual = 3.6038816e-06, No Iterations 1
+DILUPBiCGStab:  Solving for CH4, Initial residual = 0.5759457, Final residual = 0.028597572, No Iterations 1
 DILUPBiCGStab:  Solving for O2, Initial residual = 0, Final residual = 0, No Iterations 0
 DILUPBiCGStab:  Solving for H2, Initial residual = 0, Final residual = 0, No Iterations 0
 DILUPBiCGStab:  Solving for H2O, Initial residual = 0, Final residual = 0, No Iterations 0
 DILUPBiCGStab:  Solving for CO, Initial residual = 0, Final residual = 0, No Iterations 0
-DILUPBiCGStab:  Solving for h, Initial residual = 9.780469e-08, Final residual = 9.780469e-08, No Iterations 0
+DILUPBiCGStab:  Solving for h, Initial residual = 9.7814823e-08, Final residual = 9.7814823e-08, No Iterations 0
 Min/max T:300 973
-GAMG:  Solving for p_rgh, Initial residual = 1.2296757e-07, Final residual = 9.2390116e-09, No Iterations 1
-time step continuity errors : sum local = 8.235859e-08, global = -3.3022741e-10, cumulative = -3.3022741e-10
-ExecutionTime = 10.751722 s  ClockTime = 11 s
+GAMG:  Solving for p_rgh, Initial residual = 1.0098309e-07, Final residual = 7.9324115e-09, No Iterations 1
+time step continuity errors : sum local = 7.0685304e-08, global = 8.4974107e-11, cumulative = 8.4974107e-11
+ExecutionTime = 14.938353 s  ClockTime = 15 s
 
-Region: FLUID Courant Number mean: 4959.4554 max: 7869.4532
-Time = 882s
+Region: FLUID Courant Number mean: 4959.4554 max: 7869.4527
+Time = 4998s
 
 
 Solving for fluid region FLUID
-DILUPBiCGStab:  Solving for Ux, Initial residual = 4.7908958e-10, Final residual = 4.7908958e-10, No Iterations 0
-DILUPBiCGStab:  Solving for Uy, Initial residual = 2.9191198e-08, Final residual = 2.9191198e-08, No Iterations 0
-DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0011628469, Final residual = 2.3173127e-06, No Iterations 1
-DILUPBiCGStab:  Solving for CH4, Initial residual = 0.82174821, Final residual = 0.022894174, No Iterations 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 1.6016375e-10, Final residual = 1.6016375e-10, No Iterations 0
+DILUPBiCGStab:  Solving for Uy, Initial residual = 2.0719819e-08, Final residual = 2.0719819e-08, No Iterations 0
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0010012755, Final residual = 2.9991976e-06, No Iterations 1
+DILUPBiCGStab:  Solving for CH4, Initial residual = 0.80600956, Final residual = 0.037568623, No Iterations 1
 DILUPBiCGStab:  Solving for O2, Initial residual = 0, Final residual = 0, No Iterations 0
 DILUPBiCGStab:  Solving for H2, Initial residual = 0, Final residual = 0, No Iterations 0
 DILUPBiCGStab:  Solving for H2O, Initial residual = 0, Final residual = 0, No Iterations 0
 DILUPBiCGStab:  Solving for CO, Initial residual = 0, Final residual = 0, No Iterations 0
-DILUPBiCGStab:  Solving for h, Initial residual = 9.7798285e-08, Final residual = 9.7798285e-08, No Iterations 0
+DILUPBiCGStab:  Solving for h, Initial residual = 9.7811254e-08, Final residual = 9.7811254e-08, No Iterations 0
 Min/max T:300 973
-GAMG:  Solving for p_rgh, Initial residual = 1.6619164e-08, Final residual = 1.6619164e-08, No Iterations 0
-time step continuity errors : sum local = 1.4786125e-07, global = -9.1964222e-10, cumulative = -9.1964222e-10
-ExecutionTime = 10.765266 s  ClockTime = 11 s
+GAMG:  Solving for p_rgh, Initial residual = 1.5395851e-08, Final residual = 1.5395851e-08, No Iterations 0
+time step continuity errors : sum local = 1.3695807e-07, global = -8.4575642e-10, cumulative = -8.4575642e-10
+ExecutionTime = 14.941159 s  ClockTime = 15 s
 
-Region: FLUID Courant Number mean: 4959.4554 max: 7869.4532
-Time = 883s
+Region: FLUID Courant Number mean: 4959.4554 max: 7869.4527
+Time = 4999s
 
 
 Solving for fluid region FLUID
-DILUPBiCGStab:  Solving for Ux, Initial residual = 4.6465169e-10, Final residual = 4.6465169e-10, No Iterations 0
-DILUPBiCGStab:  Solving for Uy, Initial residual = 2.8542797e-08, Final residual = 2.8542797e-08, No Iterations 0
-DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0010206311, Final residual = 2.3373293e-06, No Iterations 1
-DILUPBiCGStab:  Solving for CH4, Initial residual = 0.75515484, Final residual = 0.026080141, No Iterations 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 1.5323312e-10, Final residual = 1.5323312e-10, No Iterations 0
+DILUPBiCGStab:  Solving for Uy, Initial residual = 2.0183598e-08, Final residual = 2.0183598e-08, No Iterations 0
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.00099988538, Final residual = 3.4954154e-06, No Iterations 1
+DILUPBiCGStab:  Solving for CH4, Initial residual = 0.69403732, Final residual = 0.029095445, No Iterations 1
 DILUPBiCGStab:  Solving for O2, Initial residual = 0, Final residual = 0, No Iterations 0
 DILUPBiCGStab:  Solving for H2, Initial residual = 0, Final residual = 0, No Iterations 0
 DILUPBiCGStab:  Solving for H2O, Initial residual = 0, Final residual = 0, No Iterations 0
 DILUPBiCGStab:  Solving for CO, Initial residual = 0, Final residual = 0, No Iterations 0
-DILUPBiCGStab:  Solving for h, Initial residual = 9.7797399e-08, Final residual = 9.7797399e-08, No Iterations 0
+DILUPBiCGStab:  Solving for h, Initial residual = 9.7810739e-08, Final residual = 9.7810739e-08, No Iterations 0
 Min/max T:300 973
-GAMG:  Solving for p_rgh, Initial residual = 4.6609475e-08, Final residual = 4.6609475e-08, No Iterations 0
-time step continuity errors : sum local = 4.1484332e-07, global = -9.8943894e-10, cumulative = -9.8943894e-10
-ExecutionTime = 10.778131 s  ClockTime = 11 s
+GAMG:  Solving for p_rgh, Initial residual = 3.5208077e-08, Final residual = 3.5208077e-08, No Iterations 0
+time step continuity errors : sum local = 3.1334509e-07, global = -5.3326556e-11, cumulative = -5.3326556e-11
+ExecutionTime = 14.944058 s  ClockTime = 15 s
+
+Region: FLUID Courant Number mean: 4959.4554 max: 7869.4527
+Time = 5000s
+
+
+Solving for fluid region FLUID
+DILUPBiCGStab:  Solving for Ux, Initial residual = 1.436057e-10, Final residual = 1.436057e-10, No Iterations 0
+DILUPBiCGStab:  Solving for Uy, Initial residual = 1.9464561e-08, Final residual = 1.9464561e-08, No Iterations 0
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0011337391, Final residual = 2.4300724e-06, No Iterations 1
+DILUPBiCGStab:  Solving for CH4, Initial residual = 0.53004973, Final residual = 0.022478454, No Iterations 1
+DILUPBiCGStab:  Solving for O2, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for H2, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for H2O, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for CO, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for h, Initial residual = 9.7811266e-08, Final residual = 9.7811266e-08, No Iterations 0
+Min/max T:300 973
+GAMG:  Solving for p_rgh, Initial residual = 6.1793544e-08, Final residual = 6.1793544e-08, No Iterations 0
+time step continuity errors : sum local = 5.4996068e-07, global = -9.66942e-11, cumulative = -9.66942e-11
+ExecutionTime = 14.951283 s  ClockTime = 15 s
+
+End
+
+Finalising parallel run

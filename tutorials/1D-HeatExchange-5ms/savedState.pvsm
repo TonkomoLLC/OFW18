@@ -12,7 +12,7 @@
         <Element index="0" value="10"/>
       </Property>
       <Property name="EndTime" id="261.EndTime" number_of_elements="1">
-        <Element index="0" value="4500"/>
+        <Element index="0" value="5000"/>
       </Property>
       <Property name="FramesPerTimestep" id="261.FramesPerTimestep" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -6178,7 +6178,7 @@
         </Domain>
       </Property>
       <Property name="FileName" id="11930.FileName" number_of_elements="1">
-        <Element index="0" value="/home/eadaymo/OpenFOAM/eadaymo-10/run/OFW18code/CHTMRFCode-newTutorials/1D-HeatExchange-5ms/1D-HeatExchange{FLUID}.OpenFOAM"/>
+        <Element index="0" value="/home/eadaymo/OpenFOAM/eadaymo-10/applications/OFW18-fixBiot/tutorials/1D-HeatExchange-5ms/1D-HeatExchange{FLUID}.OpenFOAM"/>
         <Domain name="files" id="11930.FileName.files"/>
       </Property>
       <Property name="LagrangianFieldArrayStatus" id="11930.LagrangianFieldArrayStatus"/>
@@ -6238,8 +6238,8 @@
       </Property>
       <Property name="TimestepValues" id="11930.TimestepValues" number_of_elements="3">
         <Element index="0" value="0"/>
-        <Element index="1" value="4400"/>
-        <Element index="2" value="4500"/>
+        <Element index="1" value="4900"/>
+        <Element index="2" value="5000"/>
       </Property>
       <Property name="UiCacheMesh" id="11930.UiCacheMesh" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -6317,7 +6317,7 @@
       </Property>
       <Property name="TimeRange" id="256.TimeRange" number_of_elements="2">
         <Element index="0" value="0"/>
-        <Element index="1" value="4500"/>
+        <Element index="1" value="5000"/>
       </Property>
       <Property name="TimeSources" id="256.TimeSources" number_of_elements="2">
         <Proxy value="11930"/>
@@ -6325,8 +6325,8 @@
       </Property>
       <Property name="TimestepValues" id="256.TimestepValues" number_of_elements="3">
         <Element index="0" value="0"/>
-        <Element index="1" value="4400"/>
-        <Element index="2" value="4500"/>
+        <Element index="1" value="4900"/>
+        <Element index="2" value="5000"/>
       </Property>
       <Property name="Views" id="256.Views" number_of_elements="2">
         <Proxy value="12008"/>
@@ -6905,8 +6905,8 @@
         <Domain name="bool" id="12008.UseCache.bool"/>
       </Property>
       <Property name="ViewSize" id="12008.ViewSize" number_of_elements="2">
-        <Element index="0" value="1199"/>
-        <Element index="1" value="817"/>
+        <Element index="0" value="1413"/>
+        <Element index="1" value="790"/>
       </Property>
       <Property name="ViewTime" id="12008.ViewTime" number_of_elements="1">
         <Element index="0" value="4400"/>

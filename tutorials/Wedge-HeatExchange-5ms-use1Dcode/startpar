@@ -1,1 +1,1 @@
-mpirun -np 4 chtMultiRegionFoam-porous1D -parallel
+mpirun -np 2 chtMultiRegionFoam-porous1D -parallel
